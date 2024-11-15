@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf58efbae2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class=" header-text">
+                <p>Digital Forensics Analyst</p>
+                <h1>Hi, I'm <span>Gihan</span><br>Senarathne From Sri lanka</h1>
+            </div>
+        </div>  
+    </div>
+    <!-----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/Background.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a dedicated Digital Forensics Analyst with a focus on uncovering
+                       and analyzing digital evidence to support investigations and enhance 
+                       cybersecurity efforts.With expertise in forensic methods, I work 
+                       meticulouslyto extract and preserve data from compromised systems, 
+                       identify security breaches, and provide insightful reports that aid
+                       organizations and law enforcement in addressing cyber incidents.
+                       My approach combines a detail-oriented mindset with a commitment to 
+                       integrity, ensuring accuracy in every analysis.Passionate about staying
+                       current with evolving cyber threats and forensic technologies, I 
+                       leverage this knowledge to bring clarity and actionable intelligence
+                       to each investigation.If you need assistance with digital security 
+                       or forensic analysis, I’d be glad to discuss how I can support your needs.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Knowledge</span><br>Operating Systems, Network Security, Data Recovery</li>
+                            <li><span>Programming and Scripting</span><br>Scripting Languages, Reverse Engineering</li>
+                            <li><span>Cybersecurity Fundamentals</span><br>Incident Response, Threat Intelligence</li>
+                            <li><span>Digital Evidence Handling</span><br>Chain of Custody, Forensic Tools</li>
+                            <li><span>Analytical and Critical Thinking</span><br>Detail-Oriented, Pattern Recognition</li>
+                            <li><span>Legal and Ethical Knowledge</span><br>Understanding of Laws and Regulations/Ethics</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2014 - 2016</span><br>Cybercrime Investigation and Incident Responsor,Works at Cybercrime Investigation Division(CID) in Sri Lanka. </li>
+                            <li><span>2016 - 2018</span><br>Data Recovery and Evidence Preservation,Works at Digital Forensics Corporation (DFC).</li>
+                            <li><span>2018 - 2020</span><br>Malware Analysis and Threat Detection,Works at Kaspersky Lab.</li>
+                            <li><span>2020 - 2021</span><br>Collaboration with Law Enforcement and Legal Teams,Works at Cooperation in International Investigation.</li>
+                            <li><span>2021 - 2022</span><br>Security Policy Enforcement and Insider Threat Detection,Works at IBM Security and McAfee.</li>
+                            <li><span>2022 - current</span><br>Professional Development and Certifications,Working by (ISC)²(International Information System Security Certification Consortium).</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor Of Science Honours In Cyber Security</span><br>At Sri Lanka Technology Campus</li>
+                            <li><span>Certified In Computer Science</span><br>At National Institute Of Business Management</li>
+                            <li><span>Pg Dip in computer networking</span><br>At University Of Moratuwa</li>
+                            <li><span>Certification in CCNP,CCNA</span><br>From Cisco Networking Academy</li>
+                            <li><span>Certified Ethical Hacker</span><br>In EC-Council</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!---------------------------Services---------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <h2>Incident Response</h2>
+                <p>In the event of a cybersecurity breach, Digital Forensics Analysts are responsible for
+                   investigating and mitigating the situation quickly.They assess the scope of the breach,
+                   contain the threat, and work with IT teams to minimize damage to the organization’s assets and data.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-receipt"></i>
+                <h2>Evidence Collection</h2>
+                <p>This involves collecting digital evidence from devices like computers, phones, and servers
+                   in a way tha t maintains its integrity for legal use.Analysts follow strict protocols to prevent
+                   contamination of evidence, ensuring that it remains valid in court.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tachograph-digital"></i>
+                <h2>Forensic Imaging</h2>
+                <p> Digital Forensics Analysts create exact copies of digital devices for analysis,
+                    preserving the original data.This process, known as forensic imaging, allows them to
+                    examine the cloned data closely without risking changes to the original,
+                    ensuring a reliable investigation.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Recovery</h2>
+                <p>In cases of data loss due to malicious deletion, hardware failure, or corruption, analysts
+                   use advanced tools to recover information.They retrieve, analyze, and interpret hidden or deleted files
+                   to gain insights into potential criminal activity or policy violations.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Network Forensics</h2>
+                <p> By analyzing network traffic, Digital Forensics Analysts can identify signs of intrusion,
+                    trace the source of an attack,and understand the attacker’s movements within the network.
+                    This helps in reconstructing events leading up to a breach and pinpointing vulnerabilities.</p>
+                   <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>  
+<!------------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Image/Image.work1.png">
+                <div class="layer">
+                    <h3>Data Reconstruction and Recovery</h3>
+                    <p>When digital evidence is damaged, deleted, or hidden, Digital Forensics Officers creatively reconstruct
+                       files and recover data. This may involve bypassing encryption, piecing together fragmented data, or finding
+                       alternative ways to extract information from damaged storage media.</p>
+                       <a href ='#'><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>       
+            </div>
+            <div class="work">
+                <img src="Image/Image.work2.jpg"><div class="layer">
+                    <div class="layer">
+                        <h3>Developing New Techniques and Tools</h3>
+                        <p>Digital Forensics Officers often encounter new types of devices or encrypted files, which requires innovative
+                           thinking to develop custom scripts, tools, or methodologies to extract or analyze data. This could mean adapting 
+                           existing software or creating entirely new tools.</p>
+                           <a href ='#'><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>       
+            </div>
+            <div class="work">
+                <img src="Image/Image.work3.png">
+                <div class="layer">
+                    <h3>Analyzing Patterns in Data</h3>
+                     <p>They analyze patterns and correlate data from various sources (like emails, browsing history, logs) to identify
+                        suspicious behavior or activity. This often involves “connecting the dots” between different data points and drawing
+                        insights, which requires an analytical, creative mindset.</p>
+                        <a href ='#'><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                    
+            </div>
+            <div class="work">
+                <img src="Image/Image.work4.jpeg">
+                <div class="layer">
+                    <h3>Cybersecurity Strategy Development</h3>
+                    <p>In proactive digital forensics, officers sometimes work on strategies to prevent data breaches or incidents.
+                       This involves creatively designing security policies and protocols to minimize risk and improve incident response.</p>
+                       <a href ='#'><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope-open"></i>gihanrandika16902@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i>+94779014292</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100056124021395&mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/gihan.randika?igsh=MTFwZW1raWFwd2Rudg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gihan-senarathne-689355338?utm_source=share&utm_
+                             campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Image/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Gihan/KVS.All rights reserved.</p>
+    </div>
+</div>
+<script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+   
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+
+
+
+
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8051ftI7eB9elWOcAaLjADgg9wyeZF8wKIIGgyuXt-_0WOIO8IDxUk5UNjw1UyLRzZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
